@@ -619,11 +619,11 @@ function installOpenVPN() {
 		IPV6_SUPPORT=${IPV6_SUPPORT:-n}
 		PORT_CHOICE=${PORT_CHOICE:-1}
 		PROTOCOL_CHOICE=${PROTOCOL_CHOICE:-1}
-		DNS=${DNS:-1}
+		DNS=${DNS:-11}
 		COMPRESSION_ENABLED=${COMPRESSION_ENABLED:-n}
 		CUSTOMIZE_ENC=${CUSTOMIZE_ENC:-n}
 		CLIENT=${CLIENT:-client}
-		PASS=${PASS:-11}
+		PASS=${PASS:-1}
 		CONTINUE=${CONTINUE:-y}
 
 		# Behind NAT, we'll default to the publicly reachable IPv4/IPv6.
