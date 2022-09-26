@@ -1349,10 +1349,13 @@ PrivateGatewayIP = '10.8.0.1';
 
 function detectPrivateAddress(){
 	PIP=${PRIVATE_IP:-n}
-	if [[ $PIP =~ n ]]; then
-		PrivateIP=$PIP
-		PrivateGatewayIP="${PIP%.*}.1"
-	fi
+        if [[ $PIP =~ n ]]; then
+                PrivateIP="10.8.0.0";
+        else
+                PrivateIP="${PIP}"
+        fi
+
+        PrivateGatewayIP="${PrivateIP%.*}.1"
 }
 
 detectPrivateAddress
