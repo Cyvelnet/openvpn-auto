@@ -1344,8 +1344,6 @@ function manageMenu() {
 	esac
 }
 
-PrivateIP = '10.8.0.0';
-PrivateGatewayIP = '10.8.0.1';
 
 function detectPrivateAddress(){
 	PIP=${PRIVATE_IP:-n}
