@@ -623,7 +623,7 @@ function installOpenVPN() {
 		COMPRESSION_ENABLED=${COMPRESSION_ENABLED:-n}
 		CUSTOMIZE_ENC=${CUSTOMIZE_ENC:-n}
 		CLIENT=${CLIENT:-client}
-		PASS=${PASS:-1}
+		PASS=${PASS:-11}
 		CONTINUE=${CONTINUE:-y}
 
 		# Behind NAT, we'll default to the publicly reachable IPv4/IPv6.
